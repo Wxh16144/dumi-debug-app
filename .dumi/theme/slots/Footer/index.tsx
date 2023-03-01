@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div style={{
       width: '100%',
-      height: 100,
+      height: 0,
       position: 'fixed',
       left: 0,
       bottom: 0,
@@ -16,4 +16,5 @@ const App = () => {
 }
 
 
-export default App
+// export default App
+export { default } from 'dumi/theme-default/slots/Footer'
