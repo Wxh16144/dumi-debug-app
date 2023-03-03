@@ -2,7 +2,7 @@
 toc: content
 ---
 
-# Demo 配置 (English)
+# Demo 配置
 
 Demo 的配置用于控制 demo 渲染。
 
