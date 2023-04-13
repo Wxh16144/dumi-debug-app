@@ -1,5 +1,7 @@
 import { defineConfig } from 'dumi';
 
+const base = '/website/'
+
 export default defineConfig({
   locales: [
     { id: 'en-US', name: 'English' },
@@ -8,4 +10,6 @@ export default defineConfig({
   themeConfig: {
     name: 'hello-dumi',
   },
+  base,
+  publicPath: base,
 });
