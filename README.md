@@ -1,4 +1,4 @@
-# hello-wxh
+# hello-dumi
 
 A static site base on [dumi](https://d.umijs.org).
 

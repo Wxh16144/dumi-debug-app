@@ -20,4 +20,4 @@ features:
     description: Put ! description here
 ---
 
-hello-wxh
+hello-dumi
