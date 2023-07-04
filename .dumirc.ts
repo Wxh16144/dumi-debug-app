@@ -12,4 +12,9 @@ export default defineConfig({
   },
   base,
   publicPath: base,
+  resolve: {
+    atomDirs: [
+      { type: 'component', dir: 'src/components' },
+    ]
+  }
 });
