@@ -13,14 +13,14 @@ export default () => <Foo>Case1</Foo>;
 ## Case2
 
 ```tsx
-import { Foo } from '@/Foo';
+import { Foo } from '@/components/Foo';
 export default () => <Foo>Case2</Foo>;
 ```
 
 ## Case3
 
 ```tsx
-import { Foo } from '@';
+import { Foo } from '@/components';
 export default () => <Foo>Case3</Foo>;
 ```
 
