@@ -12,6 +12,7 @@ export default defineConfig({
   },
   base,
   publicPath: base,
+  changeFavicon: 'https://gitee.com/favicon.ico',
   resolve: {
     atomDirs: [
       { type: 'component', dir: 'src/components' },
