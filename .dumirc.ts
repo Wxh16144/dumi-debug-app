@@ -17,5 +17,8 @@ export default defineConfig({
     atomDirs: [
       { type: 'component', dir: 'src/components' },
     ]
+  },
+  mock: {
+    exclude: ['mock']
   }
 });
