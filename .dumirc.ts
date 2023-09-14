@@ -20,5 +20,8 @@ export default defineConfig({
   },
   mock: {
     exclude: ['mock']
-  }
+  },
+  extraRemarkPlugins: [
+    'remark-emoji',
+  ]
 });
