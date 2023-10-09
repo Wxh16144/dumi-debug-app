@@ -17,9 +17,11 @@ jobs:
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          env: |
+            MY_SITE_BASE=/
           build: |
             pnpm i
-            pnpm run docs:preview
+            pnpm run build
           dist: dist
 
       - name: Get the preview_url

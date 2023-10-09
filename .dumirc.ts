@@ -1,6 +1,6 @@
 import { defineConfig } from 'dumi';
 
-const base = '/website/'
+const base = process.env.MY_SITE_BASE ?? '/website/';
 
 export default defineConfig({
   locales: [
