@@ -23,5 +23,6 @@ export default defineConfig({
   },
   extraRemarkPlugins: [
     'remark-emoji',
-  ]
+  ],
+  mfsu: false,
 });
