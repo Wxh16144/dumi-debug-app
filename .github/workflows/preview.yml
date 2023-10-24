@@ -14,11 +14,10 @@ jobs:
           version: 7
 
       - uses: afc163/surge-preview@v1
+        env: MY_SITE_BASE=/
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          env: |
-            MY_SITE_BASE=/
           build: |
             pnpm i
             pnpm run build
@@ -26,4 +25,3 @@ jobs:
 
       - name: Get the preview_url
         run: echo "url => ${{ steps.preview_step.outputs.preview_url }}"
-
