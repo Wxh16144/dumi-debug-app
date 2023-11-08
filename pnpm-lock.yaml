@@ -25,6 +25,12 @@ devDependencies:
   dumi:
     specifier: ^2.2.14
     version: 2.2.14(@babel/core@7.23.2)(@types/node@18.15.13)(eslint@8.53.0)(prettier@2.8.7)(react-dom@18.1.0)(react@18.1.0)(styled-components@6.1.0)(stylelint@14.16.1)(typescript@5.0.4)(webpack@5.89.0)
+  dumi-plugin-code-snippets:
+    specifier: ^1
+    version: 1.0.0(dumi@2.2.14)
+  dumi-plugin-color-chunk:
+    specifier: ^1
+    version: 1.0.0(dumi@2.2.14)
   husky:
     specifier: ^8.0.1
     version: 8.0.3
@@ -757,6 +763,11 @@ packages:
       postcss-selector-parser: ^6.0.10
     dependencies:
       postcss-selector-parser: 6.0.11
+    dev: true
+
+  /@ctrl/tinycolor@4.0.2:
+    resolution: {integrity: sha512-fKQinXE9pJ83J1n+C3rDl2xNLJwfoYNvXLRy5cYZA9hBJJw2q+sbb/AOSNKmLxnTWyNTmy4994dueSwP4opi5g==}
+    engines: {node: '>=14'}
     dev: true
 
   /@emotion/is-prop-valid@1.2.1:
@@ -4353,6 +4364,30 @@ packages:
 
   /dumi-assets-types@2.0.0-alpha.0:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
+    dev: true
+
+  /dumi-plugin-code-snippets@1.0.0(dumi@2.2.14):
+    resolution: {integrity: sha512-fN1g1kdHU/UHQ6ff1g8FtLpri5JOkTGcPBANU0fXaLtkDRLPiDifrnKkDBojV2tX5FaGmEGek/7nq3K8wpTqqA==}
+    peerDependencies:
+      dumi: ^2
+    dependencies:
+      dumi: 2.2.14(@babel/core@7.23.2)(@types/node@18.15.13)(eslint@8.53.0)(prettier@2.8.7)(react-dom@18.1.0)(react@18.1.0)(styled-components@6.1.0)(stylelint@14.16.1)(typescript@5.0.4)(webpack@5.89.0)
+      fs-extra: 11.1.1
+    optionalDependencies:
+      react: 18.1.0
+      react-dom: 18.1.0(react@18.1.0)
+    dev: true
+
+  /dumi-plugin-color-chunk@1.0.0(dumi@2.2.14):
+    resolution: {integrity: sha512-R1UA1kzgOYKsY9MMGUKGX+grIbAeV+B2pOFFTztmgVxyAEv/VM+twRgW/3HOigPf/ftAfKAd4xIpEEdXRxxrdA==}
+    peerDependencies:
+      dumi: ^2
+    dependencies:
+      '@ctrl/tinycolor': 4.0.2
+      dumi: 2.2.14(@babel/core@7.23.2)(@types/node@18.15.13)(eslint@8.53.0)(prettier@2.8.7)(react-dom@18.1.0)(react@18.1.0)(styled-components@6.1.0)(stylelint@14.16.1)(typescript@5.0.4)(webpack@5.89.0)
+    optionalDependencies:
+      react: 18.1.0
+      react-dom: 18.1.0(react@18.1.0)
     dev: true
 
   /dumi@2.2.14(@babel/core@7.23.2)(@types/node@18.15.13)(eslint@8.53.0)(prettier@2.8.7)(react-dom@18.1.0)(react@18.1.0)(styled-components@6.1.0)(stylelint@14.16.1)(typescript@5.0.4)(webpack@5.89.0):
