@@ -15,7 +15,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
 
       - uses: afc163/surge-preview@v1
         env:
@@ -23,6 +23,7 @@ jobs:
         with:
           surge_token: ${{ secrets.SURGE_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          failOnError: true
           build: |
             pnpm i
             pnpm run build
