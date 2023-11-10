@@ -1,6 +1,6 @@
 import React from 'react'
 
-const App = () => {
+const LocalFooter = () => {
 
   return (
     <div style={{
@@ -16,5 +16,5 @@ const App = () => {
 }
 
 
-// export default App
-export { default } from 'dumi/theme-default/slots/Footer'
+// export default LocalFooter
+export { default } from 'dumi/theme-default/slots/Footer' /** dumi builtin themes */
