@@ -1,5 +1,5 @@
 ---
-title: 'my-Foo'
+title: '组件'
 ---
 
 ## Case 1

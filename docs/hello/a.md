@@ -1,5 +1,7 @@
 ---
 toc: content
+nav:
+  title: Hello
 ---
 
 # a
