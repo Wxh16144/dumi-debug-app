@@ -20,6 +20,7 @@ export default defineConfig({
   resolve: {
     atomDirs: [
       { type: 'component', dir: 'src/components' },
+      { type: 'assets', dir: 'src/assets' },
     ]
   },
   mock: {
