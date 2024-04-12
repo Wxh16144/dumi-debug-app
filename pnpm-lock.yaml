@@ -34,6 +34,9 @@ devDependencies:
   lint-staged:
     specifier: ^13.0.3
     version: 13.2.1
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
   prettier:
     specifier: ^2.7.1
     version: 2.8.7
