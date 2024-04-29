@@ -1,7 +1,7 @@
 import * as React from "react";
 import './style.less'
 import styles from  './style.module.less'
-
+import styles2 from  './style.module.css'
 
 export interface FooProps {
   slogan?: React.ReactNode;
@@ -18,7 +18,7 @@ function Foo(props: React.PropsWithChildren<FooProps>) {
       <div className="foo-cls">
         123
       </div>
-      <div className={styles.moduleFoo}>
+      <div className={[styles.moduleFoo,styles2.moduleFoo].join(' ')}>
         234
       </div>
       {children}
