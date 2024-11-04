@@ -5,7 +5,7 @@
   "packageManager": "pnpm@8.6.2",
   "scripts": {
     "start": "npm run dev",
-    "dev": "dumi dev",
+    "dev": "npx hard-load && dumi dev",
     "build": "dumi build",
     "prepare": "husky install && dumi setup"
   },
@@ -34,6 +34,7 @@
     "dumi-plugin-code-snippets": "^1",
     "dumi-plugin-color-chunk": "^1",
     "dumi-theme-antd-style": "^0.31.1",
+    "hard-load": "^0.0.2",
     "husky": "^8.0.3",
     "lint-staged": "^13.3.0",
     "lodash": "^4.17.21",
